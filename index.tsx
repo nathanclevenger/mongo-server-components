@@ -7,7 +7,7 @@ const client = new MongoClient(process.env.MONGODB_URI!)
 type ListProps<T = Document> = {
   id?: string
   style?: React.CSSProperties
-  classNames?: string
+  className?: string
   children?: React.ReactElement<WithId<Document>>
   db?: string
   coll: string
@@ -50,7 +50,7 @@ export const MongoList = async ({ db, coll, filter = {}, sort, direction, skip, 
 type ItemProps<T = Document> = {
   id?: string
   style?: React.CSSProperties
-  classNames?: string
+  className?: string
   db?: string
   coll: string
   filter: Filter<T>
@@ -88,7 +88,6 @@ export const MongoForm = async ({ children, ...props }: ItemProps) => {
   }
 
   return (
-    // @ts-ignore TODO: Figure out typing issue see https://github.com/vercel/next.js/discussions/56581
     <form action={upsert}>
       {children}
     </form>
