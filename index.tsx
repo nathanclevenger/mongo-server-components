@@ -88,6 +88,7 @@ export const MongoForm = async ({ children, ...props }: ItemProps) => {
   }
 
   return (
+    // @ts-ignore TODO: Figure out typing issue see https://github.com/vercel/next.js/discussions/56581
     <form action={upsert}>
       {children}
     </form>
