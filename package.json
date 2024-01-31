@@ -1,0 +1,39 @@
+{
+  "name": "mongo-server-components",
+  "version": "0.0.1",
+  "description": "React Server Components for MongoDB List + CRUD",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsup index.tsx",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanclevenger/mongo-server-components.git"
+  },
+  "keywords": [
+    "mongo",
+    "mongodb",
+    "react",
+    "rsc"
+  ],
+  "author": "Nathan Clevenger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nathanclevenger/mongo-server-components/issues"
+  },
+  "homepage": "https://github.com/nathanclevenger/mongo-server-components#readme",
+  "peerDependencies": {
+    "mongodb": "^6",
+    "next": "^14",
+    "react": "^18.2",
+    "react-dom": "^18.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2",
+    "@types/react-dom": "^18.2",
+    "mongodb": "^6.3.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}
